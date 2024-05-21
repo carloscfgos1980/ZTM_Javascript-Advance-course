@@ -13,3 +13,17 @@
 - Single Threaded
 - Javascript Runtime
 - Node.js
+
+# Chapter 2. Javascript Foundation II
+
+- Execution Context
+- Lexical Environment
+- Hoisting
+- arguments Keyword
+- Variable Environment
+- Scope Chain
+- Function Scope vs Block Scope
+- Global Variables
+- IIFE => Immediately Invoke Function Expressions
+- this Keyword
+- call(), apply(), bind()
