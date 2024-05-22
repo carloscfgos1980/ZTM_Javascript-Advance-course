@@ -27,3 +27,28 @@
 - IIFE => Immediately Invoke Function Expressions
 - this Keyword
 - call(), apply(), bind()
+
+# Chapter 3. Types in JavaScript
+
+- Javascript Types
+- Array.isArray()
+- Pass By Value vs Pass By Reference
+- structuredClone
+- Type Coercion
+- JTS: Dynamic vs Static Typing
+- JTS: Weakly vs Strongly Typed
+- JTS: Static Typing In JavaScript
+
+# Chapter 4. The 2 Pillars: Closures and Prototypal Inheritance
+
+# Chapter 5. Object Oriented Programming
+
+# Chapter 6. Functional Programming
+
+# Chapter 7. OOP vs FP
+
+# Chapter 8. Asynchronous JavaScript
+
+# Chapter 9. Modules in JavaScript
+
+# Chapter 10. Error Handling
