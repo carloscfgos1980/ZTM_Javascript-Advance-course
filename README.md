@@ -51,6 +51,16 @@
 
 # Chapter 5. Object Oriented Programming
 
+- Object Oriented Programming definition
+- Factory Functions
+- OOP2: Object.create()
+- OOP3: Constructor Function
+- OOP4: ES6 Classes
+- Object.create() vs Class
+- this - 4 Ways
+- Inheritance
+- 4 pillars of OOP
+
 # Chapter 6. Functional Programming
 
 # Chapter 7. OOP vs FP
