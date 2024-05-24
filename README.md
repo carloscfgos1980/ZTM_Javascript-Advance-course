@@ -63,6 +63,20 @@
 
 # Chapter 6. Functional Programming
 
+- Functional Programming Introduction
+- Pure Functions
+- an Everything Be Pure?
+- Idempotent
+- Imperative vs Declarative
+- Immutability
+- Higher Order Functions and Closures
+- Currying
+- Partial Application
+- MCI: Memoization
+- Compose and Pipe
+- Arity
+- Amazon exercise to apply functional programming
+
 # Chapter 7. OOP vs FP
 
 # Chapter 8. Asynchronous JavaScript
