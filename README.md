@@ -79,6 +79,9 @@
 
 # Chapter 7. OOP vs FP
 
+- Composition vs Inheritance
+- Object Oriented Programming (OOP) vs Funtional Programming (FPs)
+
 # Chapter 8. Asynchronous JavaScript
 
 # Chapter 9. Modules in JavaScript
