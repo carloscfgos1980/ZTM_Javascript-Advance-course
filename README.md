@@ -84,6 +84,16 @@
 
 # Chapter 8. Asynchronous JavaScript
 
+- How JavaScript Works
+- Promises
+- ES8 - Async Await
+- ES9 (ES2018). Object spread operators
+- ES9 (ES2018) - Async:for await of
+- Job Queue
+- Parallel, Sequence, Race
+- New feature for async: allSettled(), any()
+- Threads, Concurrency and Parallelism
+
 # Chapter 9. Modules in JavaScript
 
 # Chapter 10. Error Handling
