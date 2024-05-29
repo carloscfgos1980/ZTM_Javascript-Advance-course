@@ -104,3 +104,7 @@
 - ES2022 Top Level Await
 
 # Chapter 10. Error Handling
+
+- Errors In JavaScript
+- Try Catch
+- Async Error Handling
