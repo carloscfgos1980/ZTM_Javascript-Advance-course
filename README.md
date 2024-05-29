@@ -96,4 +96,11 @@
 
 # Chapter 9. Modules in JavaScript
 
+- What Is A Module?
+- Module Pattern
+- Module Pattern Pros and Cons
+- CommonJS, AMD, UMD
+- ES6 Modules
+- ES2022 Top Level Await
+
 # Chapter 10. Error Handling
