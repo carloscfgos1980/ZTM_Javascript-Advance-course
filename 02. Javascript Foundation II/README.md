@@ -32,34 +32,73 @@ https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/1
 
 - hoisting does not work with "const" and it is a pain in the ass so I probably won't use it!
 
-# Lesson 7. arguments Keyword
+# Lesson 7. Function Invocation
+
+https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12539510
+
+// Function Expression
+var Canada = function(){
+console.log('cold');
+}
+
+// Function Declaration
+
+function india(){
+console.log('warm');
+}
+
+// Function Invocation/Call/Execution
+
+canada()
+india()
+
+function marry (person1, person2) {
+console.log ('arguments', arguments)
+retunr `person ${person1} is married ${person2}`
+}
+
+marry('Tim', 'Tina')
+
+- Logging arguments will return an object:
+  arguments:{
+  0: 'Tim',
+  1: 'Tina'
+  }
+
+# Lesson 8. arguments Keyword
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12539498
 
-- Arguments is a reserved heyword. When we use it inside a function, will contaill the arguments in a object format
+- Arguments is a reserved heyword. When we use it inside a function, will contain the arguments in a object format
 - Check <arguments.js> file
 
-# Lesson 8. Variable Environment
+# Lesson 9. Variable Environment
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12539514
 
-# Lesson 9. Scope Chain
+# Lesson 10. Scope Chain
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12539496
 
-# Lesson 10. [[scope]]
+- Check <10.scope-chain.js> file
+
+Variable can be reached if they are up the scope chain. All global variable can be reached.
+
+# Lesson 11. [[scope]]
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12539502
 
-# Lesson 11. Exercise: JS is Weird
+# Lesson 12. Exercise: JS is Weird
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12539513
 
-# Lesson 12. Function Scope vs Block Scope
+# Lesson 13. Function Scope vs Block Scope
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12539508
 
-# Lesson 13. Exercise: Block Scope
+Javascript originally was built with function scope {} using var, that was an issue that is why with ES6 they introduced "let" and "const" in order to provide block scope so the variable are absolutely private for the functions
+
+# Lesson 14. Exercise: Block Scope
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12539507
 
@@ -67,23 +106,42 @@ https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/1
 
 When we use "var" we can access the value outside the scope "{}" but not when we use let or const.
 
-# Lesson 14. Global Variables
+# Lesson 15. Global Variables
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12539500
 
-# Lesson 15. IIFE
+- Having to many global variables it could over flow the system and make the browser crash
+
+# Lesson 16. IIFE
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12539512
 
 IIFE => Immediately Invoke Function Expressions. We can use to avoid polluting the app with global variables
 
-# Lesson 16. this Keyword
+(function (){
+
+})();
+
+# Lesson 17. this Keyword
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12539505
 
 <this> heyword is one of the most confused elements. This == window object.
 
-Example 1. This is the object that the function is a property of
+- This could be confusing, like the following example:
+
+function a (){
+console.log(this)
+}
+a() // This will log the window object
+
+function a (){
+'use strict'
+console.log(this)
+}
+a() // it will be undefined, no logging. ES6 has 'use strict' by default. This was a issue with Javascript
+
+Example 1. <This> is the object that the function is a property of
 
 const obj = {
 name: "Billy",
@@ -119,21 +177,23 @@ importantPerson() // Sunny
 objt1.importantPerson() //Cassy
 objt2.importantPerson() //Jacob
 
-# Lesson 17. Exercise: Dynamic Scope vs Lexical Scope
+- object has properties (variables) and methods (functions)
+
+# Lesson 18. Exercise: Dynamic Scope vs Lexical Scope
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12539506
 
-# Lesson 18. call(), apply(), bind()
+# Lesson 19. call(), apply(), bind()
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12539495
 
 Function borrowing. This 3 different methods can be used to reuse a nested a function in another funcions. Example in file <call-apply-bind>
 
-# Lesson 19. bind() and currying
+# Lesson 20. bind() and currying
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12539511
 
-# Lesson 20. Exercise: this Keyword
+# Lesson 21. Exercise: this Keyword
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12539497
 
@@ -161,6 +221,6 @@ const giveMeTheCharacterNOW = character.getCharacter.bind(character);
 //How Would you fix this?
 console.log('?', giveMeTheCharacterNOW()); //this should return 'Simon' bud doesn't
 
-# Lesson 21. Context vs Scope
+# Lesson 22. Context vs Scope
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12539504

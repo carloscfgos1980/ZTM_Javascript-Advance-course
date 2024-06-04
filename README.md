@@ -19,6 +19,7 @@
 - Execution Context
 - Lexical Environment
 - Hoisting
+- Function invocation
 - arguments Keyword
 - Variable Environment
 - Scope Chain

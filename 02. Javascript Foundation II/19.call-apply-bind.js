@@ -1,3 +1,12 @@
+//Call() //Apply() //Bind()
+
+// function a() {
+//   console.log("hi");
+// }
+
+// a.apply()
+
+
 const wizard = {
   name: "Merlin",
   health: 50,
