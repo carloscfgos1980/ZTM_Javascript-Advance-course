@@ -10,7 +10,7 @@ https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/1
 
 Functions are special type of objects, they are callable objects
 
-# Lesson 3. First Class Citizens
+# Lesson 3. Functions are First Class Citizens
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12543668
 
@@ -115,16 +115,20 @@ a()()() // 'grandpa > father > son'
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12543667
 
+In this exercise, the const is defined after the setTimeout function and still works. That is because setTimeout is sent to the <web api> and when it returns after 4 seconds, the const (variable) is already saved in memory and it is noe deleted after the callstack is empty because <closures>. Myabe this could be a job interview!
+
 # Lesson 9. Closures and Memory
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12543678
 
-//This example, the array is created 3 times!
-function heavyDuty(item) {
-const bigArray = new Array(7000).fill('😄')
-console.log('created!');
-return bigArray[item]
-}
+- Closures are very important for <memory efficent> and <encapsulaption>
+
+  //This example, the array is created 3 times!
+  function heavyDuty(item) {
+  const bigArray = new Array(7000).fill('😄')
+  console.log('created!');
+  return bigArray[item]
+  }
 
 heavyDuty(699)
 heavyDuty(699)
@@ -148,9 +152,14 @@ return bigArray[item]
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12543661
 
+- This example does not work in repl. It needs to be run in chrome dev tool.
+- Encapsulation is very important to keep data hide from the user so it won't be modified abd break the app. This comes very handy in modules (NPM)
+
 # Lesson 11. Exercise: Closures 2
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12543677
+
+- Problem to solve. With the following condes, the function is run 3 times. Next lesson this is solved!
 
 let view;
 function initialize() {
@@ -256,6 +265,15 @@ https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/1
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12543671
 
+- This should be run in chrome dev tool:
+
+const array = []
+array.**proto** // returns the Array constructor with all the methods we can use
+
+array.**proto**.**proto** // returns the global object from everything is created in Javascript
+
+- A object ge access to the properties and methods of another object thru the prototype chain
+
 # Lesson 15. Prototypal Inheritance 2
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12543680
@@ -346,6 +364,7 @@ console.log(prop)
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12543674
 
 - Check <prototype inherance> diagram
+- Check <Function protitype chain> diagram
 
 # Lesson 18. Prototypal Inheritance 5
 
@@ -361,9 +380,15 @@ console.log(socrates) // age: 45
 console.log(socrates.mortal) //true
 console.log(human.isPrototypeOf(socrates)) // true
 
+- We can do prototype inherance without using **proto** which is not recommended, instead we can use Object.create() method
+
 # Lesson 19. Prototypal Inheritance 6
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12543676
+
+- Only functions has <prototype> property (method)
+- everything in Javascript are objects, also arrays and functions. They inherit, thur the prototype chain from the based object
+- Using prototype we avoidn reusing codes, repeating ourselves, avoid adding the same code over and over again and being inefficient with out memory
 
 # Lesson 20. Exercise: Prototypal Inheritance
 

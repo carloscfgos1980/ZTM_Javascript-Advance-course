@@ -43,7 +43,7 @@
 # Chapter 4. The 2 Pillars: Closures and Prototypal Inheritance
 
 - Functions Are Objects
-- First Class Citizen
+- Function are First Class Citizen
 - Higher Order Functions
 - Closures
 - Closures and Memory
