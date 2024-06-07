@@ -1,4 +1,4 @@
-// object Oriented Orogramming
+// Object Oriented Programming
 
 const elfFunctions = {
   attack: function() {

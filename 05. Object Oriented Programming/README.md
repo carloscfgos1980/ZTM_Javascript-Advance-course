@@ -198,7 +198,7 @@ https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/1
 - Easy to extend
 - Easy to maintain
 - Memory efficient
-- DRY: Don't use the same method over and over again for each object. Isntead we had one place where to create functionality
+- DRY: Don't use the same method over and over again for each object. Instead we had one place where to create functionality
 
 # Lesson 17. Reviewing OOP
 
