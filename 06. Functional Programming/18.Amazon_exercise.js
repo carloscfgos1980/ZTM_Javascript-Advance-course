@@ -19,13 +19,13 @@ const user = {
   }
 
   function addItemToCart(user, item) {
-    amazonHistory.push(user)
+    amazonHistory.push({initialState:user})
     const updateCart = user.cart.concat(item)
     return Object.assign({}, user, { cart: updateCart })
   }
 
   function applyTaxToItems(user) {
-    amazonHistory.push(user)
+    amazonHistory.push({addedToCar:user})
     const {cart} = user;
     const taxRate = 1.3;
     const updatedCart = cart.map(item => {
@@ -38,13 +38,15 @@ const user = {
   }
 
   function buyItem(user) {
-    amazonHistory.push(user)
+    amazonHistory.push({taxesApplied:user})
     return Object.assign({}, user, {purchases: user.cart})
   }
 
   function emptyCart(user) {
-    amazonHistory.push(user)
-    return Object.assign({}, user, {cart: []})
+    amazonHistory.push({buyedItem:user})
+    const updatedUser = Object.assign({}, user, {cart: []})
+    amazonHistory.push({buyedItem:updatedUser})
+    return updatedUser
   }
 
 
