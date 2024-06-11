@@ -16,7 +16,7 @@ https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/1
 
 **OOP**
 
-- Organizing the codes into unuts
+- Organizing the codes into units
 - An Object is a box containing information and operations that are supposed to refer to the same concept. We are grouping it as an object.
 - This pieces of information inside an object are called attributes or state
 - Methods are the opperation that happens on the state
@@ -35,20 +35,21 @@ https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/1
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12550253
 
-**OOP**
+**Props and Cons of both paradigm**
+
+**FP**
 
 - Many operations on fixed data
 - Stateless
-- Functions are pure, thre are not side effect
-- more <imperative>
-- It is very good if you have many things that requires few operations
+- Functions are pure, there are not side effect. This allow to run programs in parallel, this make this very popular
+- It is more <declarative>. What we want to do it
+- It is very good at processing large data for our application, high performance, processes for example
+- It is very good if you have many things (data) that requires few operations
 
-**FP**
+**OOP**
 
 - Fewer operations on common data
 - Stateful
 - There are side effect, methods manipulate our internal state
-- Because no side effect, we can run programs in parallel. This makes the paradigm very popular
-- It is more <declarative>
-- It is very good at processing large data for our application
-- It is very good if we have few things that requires a lot of operations
+- more <imperative>. How we want to do it
+- It is very good if we have few things (data) that requires a lot of operations
