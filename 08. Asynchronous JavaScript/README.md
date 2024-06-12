@@ -21,11 +21,28 @@ https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/1
 
 - Check <Javascript Run - time environment>
 
+- Example of function that creates <stack overflow>:
+  function foo(){
+  foo()
+  }
+
+foo() // This is something call "recursion". A function that call itself
+
+**When asynchronous happens:**
+
+- communicate between machines
+- speaking to a database
+- make networks request
+- images processing
+- reading files
+
+**Javascript is a single threaded languague that can be non-blocking. It has one callstack, that it does one thing at a time. In order to not block the single thread. it can asynchronous with callback functions. And this callback functions get run in the background, through the call back queue, and the event loop to bring into the callstack**
+
 # Lesson 3. Promises
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12551440
 
-- A Promise is an object that may produce a single value some time in the future. Either a resolve value or a reson that is not resolved (rejected)
+- A Promise is an object that may produce a single value some time in the future. Either a resolve value or a reason that is not resolved (rejected)
 - A Promise maybe in one of three possible states: fullfilled, rejected or pending
 
 - There are 3 examples in <Promises.js> file
@@ -83,6 +100,10 @@ https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/1
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12551165
 
+- Check <Job queue> diagram
+
+- The Job Queue is a new feature create to handle promises and it has priority over the callback queue
+
 # Lesson 8. Parallel, Sequence, Race
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12551163
@@ -97,7 +118,7 @@ Sequence => Execute promises one by one, it works like a synchronical system. It
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/25054928
 
-- New ES2020 feature!
+- New ES2020 feature! with Promise.all() has to resolve all the problems and has no error. With allSettled() the promise will always return. It doesn't care about solve or reject. Run all the promises regarless if they are reject or not
 
 Example:
 
@@ -147,3 +168,12 @@ What if none of the promises resolve? In that case Promise.any() throws an error
 # Lesson 11. Threads, Concurrency and Parallelism
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12551162
+
+<Web Workers> is a different javascript program running in a different thread, alongside our main thread
+
+- Check <Concurrency-Parallelism>
+
+<Concurrency>: One thread at a time
+<Parallelism>: Multi core CPU will allow us to run more than one thread in parallel, side by side
+
+- Parallelism does not exist for Javascript but for Node

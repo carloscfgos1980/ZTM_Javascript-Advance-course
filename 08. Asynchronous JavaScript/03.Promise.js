@@ -12,11 +12,11 @@ const promise = new Promise((resolve, reject)=>{
 promise
     .then(result=>result + '!')
     .then(result2=>result2 + '?')
-    .then(result2=>result3 + '1')
+    .then(result3=>result3 + '1')
     .catch(()=>console.log('errrrooo!')) //The catch must be at the end of the chain, otherwise it will not catch all the errors, only the once produces in the chain before it!
 
 
-    // example 2
+// example 2. This method the result is shown when the last promise is resolved
 const promise2 = new Promise((resolve, reject)=>{
     setTimeout(resolve, 100, 'Hiiii!')
  })
@@ -36,7 +36,7 @@ Promise.all([promise, promise2, promise3, promise4]) // It waits until all the p
     })
 
 
-// Example 3.
+// Example 3. 
 
 const urls = [
     'https://jsonplaceholder.typicode.com/users',
