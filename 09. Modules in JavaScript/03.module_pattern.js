@@ -1,5 +1,5 @@
 // IIFE
-//Module patern
+//Module pattern
 
 var fightModule = ( function(){
     var Harry = 'Potter';

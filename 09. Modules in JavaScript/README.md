@@ -14,7 +14,9 @@ https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/1
 
 - Modules are built with: IIFE => Immediately Invoke Function Expressions
 
-- Example in <02.module_apttern>
+= This is the way is used to be. Just return from the IIFE what we want to make public, so the user can use it and hide the rest of the functionality
+
+- Example in <02.module_pattern.js>
 
 # Lesson 4. Module Pattern Pros and Cons
 
@@ -34,7 +36,7 @@ https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/1
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12552795
 
 - Modules are locate in NPM (Node Package Management)
-- Witg <CommonJS> modules are meant to be loaded synchronously
+- With <CommonJS> modules are meant to be loaded synchronously
 - Module bundler will take all javascript files and deploy as a single file in the browser
 - Bundle has the benefit of no global name space pollution and order doesn't matter anymore
 
@@ -52,6 +54,12 @@ https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/4
 
 - This is a new feature whre <async> keyword with a function is not longer needed!
 
-# Lesson 8. Section Review
+# Lesson 8. Optional: ES2022 Await Import
+
+https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/42903452
+
+- This new feature allow us to import a variable from a module directly inside the function so "require" method is not longer needed!
+
+# Lesson 9. Section Review
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12552801
