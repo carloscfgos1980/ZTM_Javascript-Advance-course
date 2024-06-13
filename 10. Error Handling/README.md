@@ -10,7 +10,7 @@ https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/1
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12553040
 
-Error is a native constructor function in Javascript and i can create new instances of this error and we can pass a message:
+Error is a native constructor function in Javascript and I can create new instances of this error and we can pass a message:
 new Error('ooops')
 
 <throw> keyword. This stops the execution of the program
@@ -44,6 +44,12 @@ https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/1
 
 - This way try and catch blocks can be used to handle errors. Example in <04.async-error-handling.js> from line 26
 
-# Lesson 6. Section Review
+# Lesson 6. Extending Errors
+
+https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12553041
+
+- This method is not so common, it is from the perspctive of OOP, creating an extend subclas from the native constructor function "Error"
+
+# Lesson 7. Section Review
 
 https://academy.zerotomastery.io/courses/advanced-javascript-concepts/lectures/12553045
